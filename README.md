@@ -238,7 +238,7 @@ protected PermissionInterceptor mPermissionInterceptor = new PermissionIntercept
 ```
     compile "com.android.support:design:${SUPPORT_LIB_VERSION}"
     compile "com.android.support:support-v4:${SUPPORT_LIB_VERSION}"
-    SUPPORT_LIB_VERSION=25.2.0(该值会更新)
+    SUPPORT_LIB_VERSION=25.4.0(该值会更新)
 ```
 
 

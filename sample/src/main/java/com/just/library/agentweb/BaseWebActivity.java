@@ -71,14 +71,14 @@ public class BaseWebActivity extends AppCompatActivity {
 
         mAgentWeb = AgentWeb.with(this)//
                 .setAgentWebParent(mLinearLayout,new LinearLayout.LayoutParams(-1,-1) )//
-                .useDefaultIndicator()//
+                .useDefaultIndicator()
                 .defaultProgressBarColor()
                 .setReceivedTitleCallback(mCallback)
                 .setWebChromeClient(mWebChromeClient)
                 .setWebViewClient(mWebViewClient)
                 .setSecutityType(AgentWeb.SecurityType.strict)
                 .setWebLayout(new WebLayout(this))
-                .createAgentWeb()//
+                .createAgentWeb()
                 .ready()
                 .go(getUrl());
 
@@ -86,10 +86,6 @@ public class BaseWebActivity extends AppCompatActivity {
 
         long n = System.currentTimeMillis();
         Log.i("Info", "init used time:" + (n - p));
-
-
-
-
 
     }
 
@@ -114,7 +110,7 @@ public class BaseWebActivity extends AppCompatActivity {
     };
     public String getUrl(){
 
-        return "https://m.jd.com/";
+        return "http://106.15.50.103:4000/jq05";
     }
 
     private ChromeClientCallbackManager.ReceivedTitleCallback mCallback = new ChromeClientCallbackManager.ReceivedTitleCallback() {

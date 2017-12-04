@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView mTitleTextView;
 
 
-    public static final String[] datas = new String[]{"Activity 使用 AgentWeb", "Fragment 使用 AgentWeb ", "文件下载", "input标签文件上传", "Js 通信文件上传,兼用Android 4.4Kitkat", "Js 通信","Video 视屏全屏播放", "自定义进度条", "自定义设置","电话 ， 信息 ， 邮件","自定义 WebView","下拉回弹效果","支持 Jsbridge","继承 BaseAgentWebActivity","继承 BaseAgentWebFragment","SmartRefresh 下拉刷新"};
+    public static final String[] datas = new String[]{"Activity 使用 AgentWeb", "Fragment 使用 AgentWeb ", "文件下载", "input标签文件上传", "Js 通信文件上传,兼用Android 4.4Kitkat", "Js 通信", "Video 视屏全屏播放", "自定义进度条", "自定义设置", "电话 ， 信息 ， 邮件", "自定义 WebView", "下拉回弹效果", "支持 Jsbridge", "继承 BaseAgentWebActivity", "继承 BaseAgentWebFragment", "SmartRefresh 下拉刷新"};
 
     @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     @Override
@@ -70,11 +70,10 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-
-        if(AgentWebConfig.DEBUG){
-            Log.i("Info","Debug 模式");
-        }else{
-            Log.i("Info","release 模式");
+        if (AgentWebConfig.DEBUG) {
+            Log.i("Info", "Debug 模式");
+        } else {
+            Log.i("Info", "release 模式");
         }
 
     }
@@ -139,6 +138,7 @@ public class MainActivity extends AppCompatActivity {
             case 15:
                 startActivity(new Intent(this, CommonActivity.class).putExtra(TYPE_KEY, 12));
 
+            default:
         }
 
 
